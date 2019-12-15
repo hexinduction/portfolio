@@ -1,2 +1,2 @@
 # portfolio
-where I'll keep the portfolio
+A showcase of my work in the program
