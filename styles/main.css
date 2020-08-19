@@ -1,53 +1,105 @@
-body {
-  padding-bottom: 5rem;
+html {
+  font-size: 10px;
+  color: #FFFFFF;
+}
+/* Type */
+@font-face {
+  font-family: 'Karrik';
+  src: url("../type/karrik/WOFF/Karrik-Regular.woff");
+  src: url("../type/karrik/WOFF2/Karrik-Regular.woff2");
 }
 
-header {
-   background: url(../images/Hero-Image.jpg) center / cover;
-   height: 60vh;
-   justify-content: center;
-   text-align: center;
- }
+@font-face {
+  font-family: 'Karrik-Italic';
+  src: url("../type/karrik/WOFF/Karrik-Italic.woff");
+  src: url("../type/karrik/WOFF2/Karrik-Italic.woff2");
+}
 
 
- h1 {
-   color: hsla(0, 0%, 100%, 0.9);
-   font-weight: bold;
- }
+a {
+  text-decoration: none;
+}
 
- .slogan {
-   color: hsla(0, 0%, 100%, 0.7);
-   font-weight: lighter;
-   font-size: 1.6rem;
- }
+body {
+  background-color: #333333;
+  margin: 0 auto;
+  font-family: 'Karrik';
+}
 
- main {
-   max-width: 900px;
- }
+li {
+  font-size: 1.6rem;
+}
 
- .project-description {
-   padding-left: 0;
- }
+.container {
+  width: 100vw;
+}
 
- .project img {
-   width: 100%;
- }
+nav {
+  width: 100%;
+  height: 4.8rem;
+  border: solid #FFFFFF;
+}
 
- footer.mdl-mini-footer {
-   bottom: 0;
-   padding: 0.5rem;
-   position: fixed;
-   width: 100%;
-   z-index: 1;
- }
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 2.5%;
+  margin: 0 auto;
+  width: 90%;
+}
 
- footer.mdl-mini-footer > ul {
-    margin: auto;
-    font-size: 2rem;
-  }
+.left-nav {
+  border-right: .3rem solid #FFFFFF;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  height: 4.8rem;
+  vertical-align: middle;
+}
 
-  @media screen and (max-width: 1024px) {
-   header.mdl-layout__header {
-     display: flex;
-   }
- }
+.pl-text-logo {
+  margin: .6rem auto;
+}
+
+.right-nav-about {
+  border-left: .3rem solid #FFFFFF;
+  border-right: .3rem solid #FFFFFF;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  text-align: center;
+}
+
+.about {
+  line-height: 1.8rem;
+  margin: 1.4rem auto;
+}
+
+.right-nav-shop {
+  grid-column-start: 11;
+  grid-column-end: 13;
+  text-align: center;
+}
+
+.shop {
+  line-height: 1.8rem;
+  margin: 1.4rem auto;
+}
+
+
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 2.5%;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.product-intro-photo {
+  background-color: #F8B1B6;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-template-columns: repeat(12, 1fr);
+  height: 18.8rem;
+  margin-top: 1.6rem;
+}
