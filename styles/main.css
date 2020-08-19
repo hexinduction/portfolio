@@ -102,4 +102,11 @@ nav {
   grid-template-columns: repeat(12, 1fr);
   height: 18.8rem;
   margin-top: 1.6rem;
+  overflow: hidden;
+}
+
+.skele {
+  grid-column-start: 5;
+  grid-column-end: 11;
+  height: 124%;
 }
