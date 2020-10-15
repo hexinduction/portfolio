@@ -129,7 +129,7 @@ nav {
 .skele {
   grid-column-start: 5;
   grid-column-end: 11;
-  height: 124%;
+  height: 130%;
 }
 
 .product-intro-number {
@@ -199,32 +199,72 @@ nav {
   background-color: #FFFFFF;
   margin: 3.6rem auto 0 auto;
   width: 100%;
-  height: 6.4rem;
+  height: 21.2rem;
 }
 
 .footer-list {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 2.5%;
+  grid-template-rows: (8, 2.65rem);
   margin: 0 auto;
   width: 90%;
+  height: 100%;
+  align-items: center;
 }
 
 .foot-link {
   color: #333333;
 }
 
-.about {
+.about-footer {
   grid-column-start: 1;
   grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
 }
 
-.shop {
+.shop-footer {
   grid-column-start: 3;
   grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
 }
 
-.contact {
+.contact-footer {
   grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+}
+
+.copyright-footer {
+  grid-column-start: 1;
   grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.copyright {
+  font-size: 1rem;
+}
+
+.logo-footer {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+
+.home-link {
+  width: 100%;
+  height: auto;
+}
+
+.pl-logo {
+  width: 100%;
+  max-width: 16.8rem;
 }
