@@ -4,6 +4,12 @@ html {
 }
 /* Type */
 @font-face {
+  font-family: 'Mulish-Black';
+  src: url('RobotoFlex-VF.ttf') format('woff2 supports variations'),
+       url('RobotoFlex-VF.woff2') format('woff2-variations');
+}
+
+@font-face {
   font-family: 'Karrik';
   src: url("../type/karrik/WOFF/Karrik-Regular.woff");
   src: url("../type/karrik/WOFF2/Karrik-Regular.woff2");
@@ -15,12 +21,27 @@ html {
   src: url("../type/karrik/WOFF2/Karrik-Italic.woff2");
 }
 
+/* GLOBAL */
+
+h1 {
+  font-size: 8.4rem;
+  font-family: 'DM Mono';
+  text-align: center;
+}
+
+h3 {
+  font-size: 3.6rem;
+  font-family: 'Karrik';
+  text-align: center;
+}
+
 
 a {
   text-decoration: none;
 }
 
 body {
+  font-size: 1.6rem;
   background-color: #333333;
   margin: 0 auto;
   font-family: 'Karrik';
@@ -34,8 +55,10 @@ li {
   width: 100vw;
 }
 
+/* NAVIGATION */
+
 nav {
-  width: 100%;
+  width: 99%;
   height: 4.8rem;
   border: solid #FFFFFF;
 }
@@ -49,15 +72,13 @@ nav {
 }
 
 .left-nav {
-  border-right: .3rem solid #FFFFFF;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 8;
   height: 4.8rem;
-  vertical-align: middle;
 }
 
 .pl-text-logo {
-  margin: .6rem auto;
+  margin: 1.4rem auto;
 }
 
 .right-nav-about {
@@ -84,7 +105,7 @@ nav {
   margin: 1.4rem auto;
 }
 
-
+/* MAIN */
 
 .main {
   display: grid;
@@ -111,6 +132,99 @@ nav {
   height: 124%;
 }
 
+.product-intro-number {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  margin-top: 2.4rem;
+  justify-content: center;
+}
+
+.three {
+  color: #333333;
+  -webkit-text-stroke-width: .15rem;
+  -webkit-text-stroke-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.product-intro-name {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  margin-top: 2.4rem;
+  justify-content: center;
+}
+
+.noodles {
+  font-weight: bold;
+
+}
+
+.product-intro-date {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  margin-top: 2.4rem;
+  text-align: center;
+}
+
 .product-intro-details {
-  
+  grid-column-start: 4;
+  grid-column-end: 10;
+  margin-top: 2.4rem;
+  text-align: center;
+}
+
+.main-link {
+  font-family: 'DM Mono';
+  border-bottom: .15rem solid;
+}
+
+.product-shop {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  margin-top: 3.6rem;
+  text-align: left;
+}
+
+.bar
+{
+  grid-column-start: 1;
+  grid-column-end: 13;
+  margin-top: 2.4rem;
+  height: 1.6rem;
+  background-color: #FFFFFF;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #FFFFFF;
+  margin: 3.6rem auto 0 auto;
+  width: 100%;
+  height: 6.4rem;
+}
+
+.footer-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 2.5%;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.foot-link {
+  color: #333333;
+}
+
+.about {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.shop {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.contact {
+  grid-column-start: 5;
+  grid-column-end: 7;
 }
