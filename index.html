@@ -8,51 +8,113 @@
     <link rel="stylesheet" href="https://use.typekit.net/cfz1rim.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image" href="./images/portfolio-favicon.png">
-    <script src="https://kit.fontawesome.com/674f69483f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/674f69483f.js" crossorigin="anonymous" async></script>
+    <script src="./scripts.js" async></script>
 </head>
-<body>
-    <main>
-        <div class="photo">
-            <div class="logo-mark">
-                <a href="index.html">
+<body class="preload">
+    <div class="big-wrap">
+        <header class="header">
+            <div class="br header-box" id="br">
+                    <div class="circle-text-box">
+                        <svg id="circleText" class="circle-text preload" viewBox="0 0 100 100" width="100" height="100">
+                            <defs>
+                            <path id="circle"
+                                d="
+                                M 50, 50
+                                m -37, 0
+                                a 37,37 0 1,1 74,0
+                                a 37,37 0 1,1 -74,0"/>
+                            </defs>
+                            <text font-size="19">
+                               <textPath xlink:href="#circle">
+                                 Billy &nbspRose&nbsp –&nbsp  UX &nbspDesigner&nbsp –
+                            </textPath>
+                            </text>
+                        </svg>
+                    </div> 
+                <a href="/index.html" class="logo" id="logo">
                     <img class="logo" src="./images/logo.svg">
                 </a>
             </div>
-            <div class="about">
-                <svg class="circle-text" viewBox="0 0 100 100" width="100" height="100">
-                    <defs>
-                    <path id="circle"
-                        d="
-                        M 50, 50
-                        m -37, 0
-                        a 37,37 0 1,1 74,0
-                        a 37,37 0 1,1 -74,0"/>
-                    </defs>
-                    <text font-size="19">
-                    <textPath xlink:href="#circle">
-                        Billy Rose – UX Designer –
-                    </textPath>
-                    </text>
-                </svg>
+            <div class="profile header-box" id="profile">
+                <div class="clipper">
+                    <a href="#about" class="about-link">
+                        <img class="photo" src="./images/profile.png" alt="A portrait of Billy Rose in a black polo and glasses on a white background illustrated with contour lines.">
+                    </a>   
+                </div>    
+            </div> 
+            <div class="title header-box" id="title">
+                <h1 class="title-text" id="title-text">User Experience Generalist</h1>
             </div>
-            <div class="image-overlay">
-                <ul class="fields">
-                    <li class="fields-list product-list"><p class="product-item">PRODUCT</p></li>
-                    <li class="fields-list ux-circle"><p class="ux">UX</p></li>
-                    <li class="fields-list"><p class="strategy">STRATEGY</p></li>
-                    <li class="fields-list"><p class="motion">MOTION &<br>INTERACTION</p></li>
-                    <li class="fields-list"><p class="brand">BRANDING &<br>IDENTITY</p></li>
-                </ul>
+        </header>
+        <main class="main">
+            <div class="work">
+                <div class="work-title section-title header-box">
+                    <h1 class="work-text section-title-text">WORK</h1>
+                </div>
+                <div class="projects-section" id="theProjects">
+                    <div class="project first-project" id="firstProject">
+                        <a href="#htOne" class="project-wrapper">
+                            <h2 class="project-number project-comp">01</h2>
+                            <h3 class="project-name project-comp">Fintech Onboarding</h3>
+                        </a>
+                    </div>
+                    <div class="project second-project" id="secondProject">
+                        <a href="#htTwo" class="project-wrapper">
+                            <h2 class="project-number project-comp">02</h2>
+                            <h3 class="project-name project-comp">Balance & Payments</h3>
+                        </a>
+                    </div>
+                    <div class="project third-project" id="thirdProject">
+                        <a href="#htThree" class="project-wrapper pw-one">
+                            <h2 class="project-number project-comp">03</h2>
+                            <h3 class="project-name project-comp">PWA Design System</h3>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="connect">
-            <a href= "mailto: theebillyrose@gmail.com"><i class="fas fa-envelope-square"></i></a>
-            <a href="https://www.github.com/hexinduction"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/billyrosedesign/"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="dev-info"><p class="design-by">Designed and developed by Billy Rose. 2023</p></div>
-    </footer>
+            <div class="display">
+                <h2 class="project-title" id="htOne">Designing a fintech onboarding experience from scratch.</h2>
+                <h2 class="project-title" id="htTwo">Creating a balance and payments experience.</h2>
+                <h2 class="project-title" id="htThree">Progressive Web App design system from the ground up.</h2>
+                
+                <div class="display-window header-box" id="dWindow">
+                    <img src="./images/enamel-display.png" class="default-img" id="splashImg" alt="">        
+                </div>
+                
+                <div class="synopsis display-text d-one" id="ptOne">A collection of diverse projects and case studies from my UX design adventures!</div>
+                
+                <div class="tags display-text dt dt-two" id="dtTwo">UX, UI, Design Systems, Product, Interaction, Motion, Identity</div>
+                <div class="synopsis display-text dt dt-two" id="ptTwo">I was the design lead on a product team tasked with creating an onboarding experience for a first-of-its-kind fintech app. Our goal was to introduce the minimum amount of friction needed to achieve high conversion from quality signups.</div>
+                <a href="https://medium.com/@theebillyrose/designing-a-fintech-product-experience-from-scratch-part-one-onboarding-6a1293a3f71c?source=friends_link&sk=603f56e9e5bbca4fddfdb567afb531fa" class="study-link study-link-read dt" id="slOne">Read the case study &rarr;</a>
+                
+                <div class="tags display-text dt dt-three" id="dtThree">UX, UI, Design Systems, Product, Interaction, Motion, Identity</div>
+                <div class="synopsis display-text dt dt-three" id="ptThree">I was the design lead on a product team that built a central balance and payments hub for membership fees and credit card activity.</div>
+                <a href="https://medium.com/@theebillyrose/creating-a-balance-and-payments-experience-for-a-membership-based-fintech-product-fb3aee17a67a?source=friends_link&sk=5c3001bf1343c96fb18068848c1e99f6" class="study-link study-link-read dt" id="slTwo">Read the case study &rarr;</a>
+                
+                <div class="tags display-text dt dt-four" id="dtFour">UX, UI, Design Systems, Product, Interaction, Motion, Identity</div>
+                <div class="synopsis display-text dt dt-four" id="ptFour">I was the design lead on a product team tasked with creating an onboarding experience for a first-of-its-kind fintech app. Our goal was to introduce the minimum amount of friction needed to achieve high conversion from quality signups.</div>
+                <a href="" class="study-link study-link-soon dt" id="slThree">Case study coming soon! &#128513;</a>
+            </div>
+            <div class="about" id="about">
+                <div class="about-title section-title header-box">
+                    <h1 class="about-text section-title-text">ABOUT</h1>
+                </div>
+                <div class="bio-box">
+                    <p class="bio">I am a UX & Product designer with 3+ years of experience. I create high level strategy, product features, design systems that scale, and interactions that delight and empower users. I have experience in progressive web applications, fintech, membership services, banking and ACH features, and more. I was most recently at Quil.</p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="contact header-box footer-child">
+                <div class="contact-message contact-child"><h4>Get in touch</h4></div>
+                <a href="mailto: theebillyrose@gmail.com" class="email contact-child contact-link">theebillyrose@gmail.com</a>
+                <a href="https://www.linkedin.com/in/billyrosedesign/" class="linkedin contact-child contact-link">LinkedIn</a>
+            </div>
+            <div class="by-billy header-box footer-child">
+                <p class="designed-by">Designed & developed by Billy Rose 2023.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
