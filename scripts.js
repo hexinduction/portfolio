@@ -1,6 +1,3 @@
-// ----- REMOVE CSS CLASS FROM BODY TO RESUME ANIMATIONS STOPPED ON LOAD
-
-
 // ----- REMOVE DEFAULT TEXT -----
 
 var parOne = document.getElementById('ptOne');

@@ -199,22 +199,17 @@ header {
     text-transform: uppercase;
     width: 90%;
     z-index: 10;
-    transition: 20s;
+    transition: 2s;
 }
 
 .circle-text:hover {
     transform-box: fill-box;
     transform-origin: center;
     transform: rotate(360deg);
-    transition: 20s;
+    transition: 2s;
     transition-timing-function: linear;
 }
 
-.logo-container {
-    height: 100%;
-    position: relative;
-    width: 100%;
-}
 
 .logo {
     width: 50%;
@@ -222,6 +217,8 @@ header {
     top: 30%;
     left: 26%;
 }
+
+
 
 @keyframes aura {
     0% {
