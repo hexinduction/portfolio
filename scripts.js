@@ -285,7 +285,7 @@ document.getElementById('secondProject').addEventListener("mouseover", dTwo);
 // ----- IMAGE THREE -----
 
 function dThree() {
-    dWin.style.backgroundImage= "url('./images/components.svg')";
+    dWin.style.backgroundImage= "url('./images/design-system.svg')";
     dWin.style.backgroundRepeat= 'no-repeat';
     dWin.style.backgroundPosition= '50%, -30%';
     dWin.style.backgroundSize= 'cover';
