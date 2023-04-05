@@ -358,6 +358,7 @@ main {
     "synops synops synops synops synops synops synops"
     "link link link link link link link";
     grid-template-columns: repeat(7, 1fr); 
+    height: 100%;
     margin-bottom: 2.4rem;
     width: auto;
 }
@@ -374,7 +375,7 @@ main {
     background-position: 60% 50%;
     border-radius: 0 0 0 25.6rem;
     grid-area: d-window;
-    height: 40vh;
+    height: 40%;
     overflow: hidden;
     position: relative;
     transition: .8s;
@@ -625,7 +626,6 @@ footer {
         ". . synops synops synops synops synops"
         ". . link link link . .";
         margin-top: calc(-4rem - 2vw);
-        max-height: 25.2rem;    
     }
 
     .window-display {
@@ -650,6 +650,7 @@ footer {
         "rectitle rectitle rectitle rectitle rectitle rectitle . . . . . ."
         "recone recone recone recone recone . rectwo rectwo rectwo rectwo rectwo .";
         grid-template-columns: repeat(12, 1fr); 
+        height: 25vh;
         margin: 2.4rem 0;
     }
 
