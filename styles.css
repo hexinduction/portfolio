@@ -375,7 +375,7 @@ main {
     background-position: 60% 50%;
     border-radius: 0 0 0 25.6rem;
     grid-area: d-window;
-    height: 40%;
+    height: 40vh;
     overflow: hidden;
     position: relative;
     transition: .8s;
@@ -398,6 +398,7 @@ main {
     font-family: degular-display, sans-serif;
     font-size: 1.6rem;
     grid-area: tags;
+    height: 100%;
 }
 
 .synopsis {
@@ -405,6 +406,7 @@ main {
     font-size: 2rem;
     font-weight: 500;
     grid-area: synops;
+    height: 100%;
     margin: 1.6rem 0;
 }
 
@@ -412,6 +414,7 @@ main {
     grid-area: link;
     font-size: 2.4rem;
     color: #280041;
+    height: 100%;
 }
 
 a.study-link-read {
